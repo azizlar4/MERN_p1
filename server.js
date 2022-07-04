@@ -11,9 +11,11 @@ connectDB();
 
 //8 middleware body-parser
 app.use(express.json());
+
 //7 routes
  
 app.use('/api/contact', require('./routes/contact'));
+app.use('/api/auth',require('./routes/user'));
 
 //3
 const PORT= process.env.PORT;
